@@ -10,13 +10,20 @@ ASIX M06-ASO Escola del treball de barcelona
 
 ### Imatges:
 
-* **edtasixm06/samba21:base** Servidor SAMBA bàsic amb *shares* d'exemple.
+* **edtasixm06/samba21:base** Servidor SAMBA bàsic amb *shares* d'exemple. Ports samba: 139, 445.
 
 
 #### Execució
 
 ```
 docker run --rm --name samba.edt.org -h samba.edt.org --net 2hisix -d edtasixm06/samba21:base 
+
+$ smbclient -L a.b.c.d
+$ smbclient //samba.edt.org/documentation
+$ smbclient -U lila%lila //samba.edt.org/public
+  put /etc/services file
+  ls
+  get file
 ```
 
 #### Shares d'exemple
