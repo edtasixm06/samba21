@@ -16,7 +16,7 @@ ASIX M06-ASO Escola del treball de barcelona
 #### Execució
 
 ```
-docker run --rm --name samba.edt.org -h samba.edt.org --net 2hisix -it edtasixm06/samba21:base 
+docker run --rm --name samba.edt.org -h samba.edt.org --net 2hisix -d edtasixm06/samba21:base 
 ```
 
 #### Shares d'exemple
