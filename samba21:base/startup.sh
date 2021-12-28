@@ -15,10 +15,10 @@ cp /opt/docker/*.md /var/lib/samba/privat/.
 cp /opt/docker/smb.conf /etc/samba/smb.conf
 
 # Creació usuaris unix/samba
-useradd lila
-useradd roc
-useradd patipla
-useradd pla
+useradd -m -s /bin/bash lila
+useradd -m -s /bin/bash roc
+useradd -m -s /bin/bash patipla
+useradd -m -s /bin/bash pla
 echo -e "lila\nlila" | smbpasswd -a lila
 echo -e "roc\nroc" | smbpasswd -a roc
 echo -e "patipla\npatipla" | smbpasswd -a patipla
